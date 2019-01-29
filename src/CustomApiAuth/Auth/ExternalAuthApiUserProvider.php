@@ -115,7 +115,7 @@ class ExternalAuthApiUserProvider implements UserProvider
             $response = ApiWrapper::call("get","user");
             if($response && property_exists($response,"user"))
             {
-                if($response->user->ApiUserLoginName == $user->ApiUserLoginName)
+                if($response->user->email == $user->email)
                 {
                     return true;
                 }
@@ -128,7 +128,7 @@ class ExternalAuthApiUserProvider implements UserProvider
               if(property_exists($response,"token"))
               {
                   $ApiUser = $this->getApiUserModel($response->token);
-                  if($ApiUser && $ApiUser->ApiUserLoginName == $user->ApiUserLoginName)
+                  if($ApiUser && $ApiUser->email == $user->email)
                   {
                       return true;
                   }
