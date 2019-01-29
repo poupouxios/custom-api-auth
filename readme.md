@@ -2,6 +2,8 @@
 
 This package is responsible to override the default Auth of Laravel and authenticate the user through the API.
 
+This was tested a while ago with Laravel 5.3. Fill free to make pull requests for improvements.
+
 ## Usage
 
 * Include the repository in your `composer.json` file as below:
