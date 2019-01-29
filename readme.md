@@ -93,6 +93,7 @@ This was tested a while ago with Laravel 5.3. Fill free to make pull requests fo
   * ``` ApiWrapper::call("post",'auth/login',["ApiUserId" => $identifier]); ```
   * ``` ApiWrapper::call("get","user") ```
   * ``` ApiWrapper::call("get","auth/logout") ```
+* There is an example folder that has an AuthController of how the logic of implementing the API calls must be.
 * That should be enough to enable the custom auth.
 
 ## Improvements
